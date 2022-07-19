@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thow e try catch</title>
+</head>
+<body>
+    <h1>Erros de JavaScript</h1>
+    <h2>Jogue e tente...Pegue...Finalmente</h2>
+
+    <p>A instrução <code>try</code> define um bloco de código a ser executado (para testar).</p>
+    <p>A instrução <code>catch</code> define um bloco de código para lidar com qualquer erro.</p>
+    <p>A instrução <code>finally</code> define um bloco de código a ser executado independentemente do resultado.</p>
+    <p>A istrução <code>throw</code> define um erro personalizado.</p>
+   
+   <div>
+    <h2>Exemplo</h2>
+    <p>Neste exemplo, digitamos incorretamente <code>"alert"</code> como <code>"adddlert"</code> para produzir deliberadamente um erro:</p>
+    <p><b>Nota:</b>Ver código fonte</p>
+
+    <p id="ex01"></p>
+
+    <h2>Exemplo de validação de entrada</h2>
+    <p>Este exemplo examina a entrada. Se o valor estiver errado, uma exceção (err) é lançada.</p>
+    <p>A exceção (err) é capturada pela instrução catch e uma mensage de erro personalizaa é exibida:</p>
+
+    <p>Please input a number between 5 and 10:</p>
+
+    <input type="text" name="demo" id="demo">
+    <button type="button" onclick="myFunction()">Test Input</button>
+
+    <p id="ex02"></p>
+   </div>
+
+
+   <script>
+        try {
+            adddlert("Welcome guest!");
+        }
+        catch(err) {
+            document.getElementById("ex01").innerHTML = err.message;
+        }
+
+        function myFunction() {
+            const message = document.getElementById("ex02");
+            message.innerHTML = "";
+            let x = document.getElementById("demo").value;
+            try {
+                if(x == "") throw "empty";
+                if(isNaN(x)) throw "not a number";
+                x = Number(x);
+                if(x < 5) throw "too low";
+                if(x > 10) throw "too high";
+            }
+            catch(err) {
+                message.innerHTML = "Input is " + err;
+            }
+        }
+   </script>
+
+
+</body>
+</html>

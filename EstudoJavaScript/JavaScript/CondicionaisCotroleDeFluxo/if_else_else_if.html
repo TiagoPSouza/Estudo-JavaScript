@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais if, else e else if</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <h1>JavaScript if, else e else if</h1>
+    <p>As instruções condicionais são usadas para executar doferentes ações com base em diferentes condições.</p>
+    <h2>Declarações condicionais</h2>
+    <ul>
+        <li>
+            Use <code>if</code> para especificar um bloco de código a ser executado, se uma condição especificada for verdadeira.
+        </li>
+        <li>
+            Use <code>else</code> para especifiar um bloco de código a ser executado, se a mesma condição for falsa.
+        </li>
+        <li>
+            Use <code>else if</code> para especificar uma nova condição a ser testada, se a primeira condição for falsa.
+        </li>
+    </ul>
+
+    <div>
+        <h2>Exemplo de <code>if else</code></h2>
+        <p>Se a hora for menor que 18, crie uma saudação "Good day", caso contrário, "Good evening":</p>
+        <code>
+            if (hour &lt; 18) { <br>
+                greeting = "good day"; <br>
+            } else { <br>
+                greeting = "Good evening"; <br>
+            } <br>
+        </code>
+    </div>
+
+    <div>
+        <h2>Exemplo de <code>if, else if, else</code></h2>
+        <p>Se a hora for menor que 10:00, crie uma saudação "Good morning", se não, mas a hora for menor que 20:00, crie a saudação "Good day", caso contrário, uma saudação "Good evening":</p>
+        <code>
+            if (time &lt; 10) { <br>
+                greeting = "Good morning!!!"; <br>
+            } else if (time &lt; 20) { <br>
+                greeting = "Good day!!!"; <br>
+                } else { <br>
+                    greeting = "Good evening!!!"; <br>
+                } <br>
+
+        </code>
+    </div>
+
+    <footer>
+        <p><strong>Nota:</strong> Saldação no inicio da pagina feita por JavaScript</p>
+    </footer>
+
+    <script>
+        const time = new Date().getHours();
+        let greeting;
+
+        if (time < 10) {
+            greeting = "Good morning!!!";
+        } else if (time < 20) {
+            greeting = "Good day!!!";
+        } else {
+            greeting = "Good evening!!!";
+        }
+
+        document.getElementById("demo").innerHTML = greeting;
+    </script>
+   
+
+</body>
+</html>

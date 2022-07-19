@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>split()</title>
+</head>
+<body>
+    <!--
+        split(): dividir()
+         O método split() divide uma string em um array de substrings.
+
+         O método split() retorna um novo array.
+
+         O método split() não altera a string original.
+
+         Se for usado (" ") como separador, a string será dividida entre as palavras.
+    -->
+    
+    <h1>JavaScript Strings</h1>
+    <h2>The split() Method</h2>
+
+    <p>split() splits a string into an array of substrings, and returns the array;</p> <!--split() divide uma string em um array de substrings e retorna o array-->
+
+    <p id="demo"></p>
+
+    <script>
+        let text = "How are you doing today?"; /*Como você está hoje?*/
+
+        const myArray = text.split(" ");
+
+        document.getElementById("demo").innerHTML = myArray + "<br>" + myArray[1];
+
+    </script>
+</body>
+</html>

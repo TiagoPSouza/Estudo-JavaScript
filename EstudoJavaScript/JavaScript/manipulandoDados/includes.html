@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>includes()</title>
+</head>
+<body>
+    <!--
+        includes(): inclui
+            O método includes() retorna true se uma string ou array contém o que foi especificado.
+            
+            Caso contrário, ele retorna false.
+
+            O método includes() diferencia maiúsculas de minúsculas.
+    -->
+
+    <h1>Métodos JavaScript</h1>
+    <h2>O método Includes()</h2>
+
+    <p>includes() retorna true ou false se contiver ou não o que foi buscado.</p>
+    <p>Encontrar "world"</p>
+    <p id="demo"></p>
+
+    <script>
+        let text = "Hello World!";
+        let result = text.includes("World");
+
+        document.getElementById("demo").innerHTML = result;
+
+    </script>
+</body>
+</html>

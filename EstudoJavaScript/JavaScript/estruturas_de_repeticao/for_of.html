@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for...of</title>
+</head>
+<body>
+    <h1>for...of (para de)</h1>
+    <p>O loop <code>for...of</code> percorre objetos iterativos (icluindo <code>Array</code>, <code>Map</code>, <code>Set</code>, o objeto <code>arguments</code> e assim por diante), chamando uma função personalizada com instruções a serem executadas para o valor de cada objeto distinto.</p> 
+
+    <h2>Sintaxe</h2>
+
+    <div>
+        <code>
+            for (variavel of iteravel) { <br>
+            &nbsp; declaração <br>
+            } <br>
+        </code>
+    </div>
+
+    <h3>variável</h3>
+    <p>A cada interação, uma valor de propriedade diferente é atribuido a variável.</p>
+
+    <h3>iteravel</h3>
+    <p>Objeto cujo atributos serão iterados.</p>
+
+    <h3>exemplo</h3>
+    <p>Loop sobre um <code>Array</code>:</p>
+    <code>
+        const cars = ["BMW", "Volvo", "Mini"]; <br> <br>
+        let text = ""; <br>
+        for (let x of cars) { <br>
+        &nbsp;  text += x; <br>
+        }
+    </code>
+    <p><strong>Nota:</strong> ver executado no código fonte</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const cars = ["BMW", "Volvo", "Mini"];
+        let text = "";
+        
+        for (let x of cars) {
+            text += x + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

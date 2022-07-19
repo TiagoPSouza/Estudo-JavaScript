@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>001</title>
+
+    
+</head>
+<body>
+    <!--
+        crie um algoritmo que transforme as notas do sistema numérico para sistema de notas em caracteres tipo A, B, C.
+
+        * de 90 para cima - A
+        * entre 80 - 89 -B
+        * entre 70 - 79 - C
+        * entre 60 - 69 - D
+        * menor que 60 - F
+    -->
+
+    <h1>Notas</h1>
+
+    <form>
+        <label for="pontos">Digite sua nota de 0 a 100:</label>
+        <input type="number" name="pontos" id="pontos">
+        <button onclick="myFunction()">Enviar</button>
+        <p id="demo"></p>
+    </form>
+    
+    
+
+    <script>
+        
+         function myFunction() {
+            var result = "";
+            
+
+            
+            const nota = document.getElementById("pontos").value;
+
+        
+            if (nota > 90) {
+            result = "A";
+        } else if (nota >= 80 && nota <= 89) {
+            result = "B";
+        } else if (nota >= 70 && nota <= 79) {
+            result = "C";
+        } else if (nota >= 60 && nota <= 69) {
+            result = "D";
+        } else {
+            result = "F";
+        } 
+        document.getElementById("demo").innerHTML = result;
+        
+        }
+        
+        //dando erro
+        
+        
+        
+
+
+        
+
+        
+    </script>
+    
+</body>
+</html>

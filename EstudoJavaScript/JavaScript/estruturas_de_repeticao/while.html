@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    <h1>While (enquanto)</h1>
+    <p>A declaração <code>while</code> cria um laço que executa uma rotina especificada enquanto a condição de teste for verdadeira. A condição é avaliada antes da execução da rotina.</p>
+
+    <div>
+        <h2>Sintaxe</h2>
+        <code>
+            while (condição) { <br>
+            &nbsp; rotina
+            }
+        </code>
+    </div>
+
+    <h3>condição</h3>
+    <p>Uma expressão avaliada antes de cada passagem através do laço. Se essa condição for avaliada com verdadeira, a rotina é executada. Quando a condição for avaliada como falsa, a execução continua na declaração depois do laço <code>while</code>.</p>
+
+    <h3>rotina</h3>
+    <p>Uma declaração que é executada quando a condição é avaliada como verdadeira. Para executar multiplas declarações dentro do laço, use uma declaração em bloco <code>({...})</code> para agrupar essas declarações.
+    </p>
+
+    <h3>exemplo</h3>
+    <p>O código no loop será executado repetinamente, desde que uma variável <code>(i)</code> seja menor que 10:</p>
+
+    <code>
+        while (i &lt; 10) { <br>
+        &nbsp; text += "The number is " + i <br>
+        &nbsp; i++; <br>
+        }
+    </code>
+    <br>
+    <strong>exemplo executado ver no código fonte</strong>
+    <p id="demo"></p>
+
+    <script>
+        let text = "";
+        let i = 0;
+
+        while (i < 10) {
+            text += "<br> The number is " + i;
+            i++;
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <h1>Declaração de troca de JavaScript</h1>
+    <p>A instrução <code>switch</code> é usada para executar diferentes ações com base em diferentes condições.</p>
+
+    <h2>Sintaxe</h2>
+    <div>
+        <code>
+            switch(expression) { <br>
+            &nbsp; case x: <br>
+            &nbsp; &nbsp; code block <br>
+            &nbsp; &nbsp; break; <br>
+            &nbsp; case y: <br>
+            &nbsp; &nbsp; code block <br>
+            &nbsp; &nbsp; break; <br>
+            &nbsp; default: <br>
+            &nbsp; &nbsp; code block <br>
+            }
+        </code>
+    </div>
+    
+
+    <p>é assim que funciona:
+        <ul>
+            <li>A expressão switch é avaliada uma vez.</li>
+            <li>O valor da expressão é comparado com os valores de cada caso.</li>
+            <li>Se houver uma correspondêcia, o código do bloco associado será executado.</li>
+            <li>Se não houver correspondêcia o bloco de código padrão será executado.</li>
+        </ul>
+    </p>
+
+    <p><strong>Exemplo no código fonte</strong> <br> dia da semana:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5: 
+                day = "Friday";
+                break;
+            case 6: 
+                day = "Saturday";
+        }
+
+        document.getElementById("demo").innerHTML = "Today is " + day;
+    </script>
+</body>
+</html>

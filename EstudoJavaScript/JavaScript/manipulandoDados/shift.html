@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shift()</title>
+</head>
+<body>
+    <!--
+        shift(): mudança()
+            O método shift() remove o primeiro item do array.
+
+            Altera o array original.
+
+            Retorna o elemento deslocado.
+    -->
+
+    <h1>Método shift()</h1>
+    <p>Remover o primeiro item do array: <br> Retornar o item removido:</p>
+
+    <p id="demo"></p>
+    <script>
+        let fruits = ["uva ", "laranja ", "maçã ", "manga "];
+        let removido = fruits.shift();
+
+        document.getElementById("demo").innerHTML = fruits + "<br>" + removido;
+    </script>
+</body>
+</html>

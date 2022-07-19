@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores lógicos</title>
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th {
+            background: #dddddd4d;
+        }
+        td, th {
+            border: 1px solid rgba(0, 0, 0, 0.507);
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Operadores Lógicos</h1>
+    <p>Operadores lógicos são utilizados com valores booleanos (lógicos); neste caso, retornam um valor booleano. Entretanto os valores && e || na verdade retornam o valor de um dos operandos especificados, de forma de que esses operadores são utilizados com valores não booleanos, eles podem retornar um valor não booleano. Os operadores lógicos são descritos na tabela a seguir:</p>
+    
+    <table>
+        <caption>Operadores lógicos</caption>
+        <tr>
+            <th>Operador</th>
+            <th>Utilização</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td>lógico AND (&&)</td>
+            <td>expr1 && expr2</td>
+            <td>Retorna expr1 caso possa ser convertido para falso, senão, retorna expr2. Assim, quando utilizado com valores booleanos, && retorna verdadeiro quando ambos operandos sejam verdadeiros, caso contrário, retorna falso.</td>
+        </tr>
+        <tr>
+           <td> lógico OR (||)</td>
+           <td>expr1 || expr2</td>
+           <td>Retorna expr1 caso possa ser convertido para verdadeiro, senão, retorna expr2. Assim, quando utilizado com valores booleanos, || retorna verdadeiro quando ambos operandos sejam verdadeiros; se ambos forem falsos retona falso.</td>
+           <tr>
+            <td>lógico NOT (!)</td>
+            <td>!expr1</td>
+            <td>Retorna falso caso único operando possa ser convertido para verdadeiro; senão, retorna falso.</td>
+           </tr>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delete</title>
+</head>
+<body>
+    <h1>Remover propriedade de um objeto</h1>
+
+    <p>O operador <code>delete</code> exclue o valor da propriedade ou a própria propriedade.</p>
+
+    <p>Após a exclusão, a propriedade não pode ser usada antes de ser adicionada novamente.</p>
+
+    <p>O operador <code>delete</code> foi projetado para ser usado nas propriedades do objeto. Não tem efeito sobre variáveis ou funções.</p>
+
+    <p><strong>Observação:</strong> o operador <code>delete</code> não deve ser usado em propriedades de objeto JavaScrpt predefinidas. Ele pode travar seu aplicativo.</p>
+
+    <h2>Exemplo no código fonte</h2>
+
+    <p>remover a idade de John:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        var person = {
+            firstname: "John",
+            lastname: "Doe",
+            age: 50,
+            eyecolor: "blue"
+        };
+
+        delete person.age;
+        document.getElementById("demo").innerHTML = person.firstname + " is " + person.age + " years old.";
+    </script>
+</body>
+</html>

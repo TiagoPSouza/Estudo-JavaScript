@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>push()</title>
+</head>
+<body>
+    <!--
+        push(): empurre()
+            O método push() adiciona novos itens ao final de um array. 
+
+            Altera o comprimento do array.
+
+            Retorna um novo comprimento.
+    -->
+
+    <h1>Array JavaScript</h1>
+    <h2>O método push()</h2>
+
+    <p>push() adiciona novos intes ao final de um array:</p>
+    <p id="demo"></p>
+
+    <script>
+        const frutas = ["banana " , "laranja " , "maçã " , "manga " ];
+        frutas.push("kiwi");
+
+        document.getElementById("demo").innerHTML = frutas;
+    </script>
+</body>
+</html>

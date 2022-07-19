@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <!--
+        - function
+            Uma função JavaScript é um bloco de código projetado para executar uma tarefa específica.
+
+            Uma função JavaScript é executada quando algo a invoca (chama).
+
+            É definida com a palavra chave function seguinda por um name, seguido de parênteses ().
+
+            Os nomes das funções podem conter letras, dígitos, sublinhados e cifrões (mesma regras das variáveis).
+
+            Os parênteses podem incluir nomes de parâmetros separados por vírgulas: (parâmetro1, parâmetro2, .... )
+            
+            O código a ser executado, pela função é colocado entre chaves: {} 
+    -->
+
+    <h2> Funções JavaScript </h2>
+    <p> Este exemplo chama uma função que realiza um cálculo e retorna o resultado: </p>
+    <p id="demo"></p>
+    <script>
+        function minhaFunction(p1, p2) {
+            return p1 * p2;
+        }
+        document.getElementById("demo").innerHTML = minhaFunction(4, 5);
+    </script>
+</body>
+</html>

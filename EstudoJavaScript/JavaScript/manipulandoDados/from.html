@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array.from()</title>
+</head>
+<body>
+    <!--
+        Array.from(): Matriz.de()
+            O método Array.from() retorna um array de qualquer objeto com uma propriedade length.
+
+            O método Array.from() retorna um array de qualquer objeto iterável.
+    -->
+
+    <h1>JavaScript Arrays</h1>
+    <h2>The Array.from() Method</h2>
+
+    <p>The Array.from() method returns an array from any iterable object.</p> <!--O método Array.from() retorna um array de qualquer objeto iterável.-->
+
+    <p id="demo"></p>
+
+    <script>
+        let text = "Tiago";
+        const myArray = Array.from(text);
+
+        document.getElementById("demo").innerHTML = myArray;
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toFixed</title>
+</head>
+<body>
+    <!--
+        toFixed(): para fixo
+            Método converte um número em uma string.
+
+            Arredonda a string para um número especificado de decimais.
+
+            Se o número de decimais for maior que o número, zeros serão adicionados.
+    -->
+
+    <h1>Números JavaScript</h1>
+    <h2>O método toFixed()</h2>
+    <p>toFixed() converte um número para string, Arredonda para um número especificado de decimais:</p>
+    <p id="demo"></p>
+    <script>
+        let num = 5.56789;
+        let n = num.toFixed(2);
+        let u = num.toFixed();
+        let m = num.toFixed(8);
+        document.getElementById("demo").innerHTML = n + "<br>" + u + "<br>" + m + "<br>" + typeof n + "<br>" + typeof num;
+    </script>
+</body>
+</html>

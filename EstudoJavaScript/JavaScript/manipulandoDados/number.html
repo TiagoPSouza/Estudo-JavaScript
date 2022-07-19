@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number()</title>
+</head>
+<body>
+    <!--
+        Number()
+            Método converte um valor em um número.
+
+            Se o valor não puder ser convertido, NaN será retornado.
+
+            NOTA: Para booleans, Number() retorna 0 ou 1.
+
+                Para datas, Number() retorna milissegundos desde primeiro de janeiro de 1970 00:00:00.
+
+                Para strings, Number() retorna um número ou NaN.
+    -->
+
+    <h1>Métodos globais de JavaScript</h1>
+    <h2>O método Number()</h2>
+    <p>Number() converte um valor em um número, se possível:</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = 
+        Number(true) + "<br>" +
+        Number(false) + "<br>" +
+        Number(new Date());
+    </script>
+</body>
+</html>

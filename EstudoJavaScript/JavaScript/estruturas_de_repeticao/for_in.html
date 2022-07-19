@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for...in</title>
+</head>
+<body>
+    <h1>for...in (para em)</h1>
+    <p>O laço <code>for..in</code> interage sobre propriedades enumeradas de um objeto, na ordem original da inserção. O laço pode ser executado para cada proriedade distinta do objeto.</p>
+
+    <h2>Sintaxe</h2>
+    <code>
+        for (variavel in objeto) { <br>
+
+        }
+    </code>
+
+    <h3>variável</h3>
+    <p>Uma propriedade diferente do objeto é atribuida em cada iteração.</p>
+
+    <h3>objeto</h3>
+    <p>Objeto com as propriedades enumeradas.</p>
+
+    <h3>Exemplo</h3>
+    <code>
+        const person = {fname:"John", Iname:"Doe", age:25}; <br>
+        let text = ""; <br>
+        for (let x in person) { <br>
+            &nbsp; text += person[x]; <br>
+        }
+    </code>
+    
+   <p><b>Nota:</b> Ver no código fonte.</p>
+   <p id="demo"></p>
+
+   <script>
+    const person = {Fname:"John", Iname:"Doe", age:25};
+
+    let text ="";
+    for (let x in person) {
+        text += person[x] + " " + "<br>";
+    }
+
+    document.getElementById("demo").innerHTML = text;
+   </script>
+</body>
+</html>

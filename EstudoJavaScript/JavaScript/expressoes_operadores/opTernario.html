@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Condicional (Ternário)</title>
+</head>
+<body>
+    <h1>Operador Condicional Ternário</h1>
+    <p>O operador condicional (ternário) é o unico operador JavaScript que possui três operadores. Este operador é frequentemente usado com um atalho para instrução <code>if</code></p>
+
+    <h2>Sintaxe</h2>
+    <code>condition ? expr1 : expr2</code>
+
+    <h2>Parâmetros</h2>
+    <h3>condition</h3>
+    <p>Uma expressão que é com <code>true</code> ou <code>false</code>.</p>
+
+    <h3>expr1, expr2</h3>
+    <p>Expressões com valores de qualquer tipo.</p>
+
+    <h2>Descrição</h2>
+    <p>Se <code>condition</code> é <code>true</code>, o operador retornará o valor de <code>expr1</code>; se não, ele retornará o valor de expr2.</p>
+
+   <div>
+    <h2>exemplo</h2>
+    <code>
+        &lt;p&gt;Insira sua idade e clique no botão:&lt;/p&gt; <br>
+
+        &lt;input id="age" value="16"&gt; <br>
+
+        &lt;button onclick="myFunction()"&gt;Enviar&lt;/button&gt; <br>
+
+        &lt;p id="demo"&gt;&lt;/p&gt; <br> <br>
+
+        &lt;script&gt; <br>
+
+        function myFunction() { <br>
+
+        let age, voteable; <br>
+
+        age = document.getElementById("age").value; <br>
+
+        voteable = (age &lt; 16) ? "muito jovem":"Velho o bastante"; <br>
+
+        document.getElementById("demo").innerHTML = voteable 
+        + "para votar."; <br>
+        } <br>
+        &lt;/script&gt;
+    </code>
+   </div>
+
+  <h2>Renderização abaixo:</h2>
+  <p>Insira sua idade e clique no botão:</p>
+<input id="age" value="16">
+<button onclick="myFunction()">Enviar</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+let age, voteable;
+age = document.getElementById("age").value;
+voteable = (age < 16) ? "muito jovem":"Idade suficiente";
+document.getElementById("demo").innerHTML = voteable + " para votar.";
+}
+</script>
+</body>
+</html>

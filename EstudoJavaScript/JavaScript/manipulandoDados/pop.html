@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop()</title>
+</head>
+<body>
+    <!--
+        pop(): estourar()
+            O método pop() remove o último elemento do array.
+            
+            Altera o array original.
+
+            Retorna o elemento removido.
+    -->
+
+    <h1>Método pop()</h1>
+    <p>Remover o último elemento:</p>
+    <p>Retornar o elemento removido:</p>
+    <p id="demo"></p>
+
+    <script>
+        let fruits = ["banana ", "laranja ", "maçã ", "manga"];
+        let removido = fruits.pop();
+
+        document.getElementById("demo").innerHTML = fruits + "<br>" + removido;
+    </script>
+</body>
+</html>

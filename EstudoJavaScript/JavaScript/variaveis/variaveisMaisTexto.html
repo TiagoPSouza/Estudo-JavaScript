@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juntando texto com variáreis</title>
+</head>
+<body>
+    <!--
+        Ao exibir na tela um texto junto a uma(s) variável(s) usamos a contatenação ou interpolando valores com template literals ou template strings.
+
+        Usamos contatenação usandos aspas('') no texto e contatenando com o simbolo + junto a variável fora das aspas. 
+
+        Usamos a template string com crase(``) e sifrão($) com chaves({}) na variável porém tudo dentro das crases(``).
+    -->
+
+    <h2>Texto junto com variáveis</h2>
+    <p>contatenando a variável date e interpolando a variável name:</p>
+    <p id="data"></p>
+    <p id="nome"></p>
+    <script>
+        let date = "27/05/2022"
+        document.getElementById ("data").innerHTML = "Hoje é dia " + date;
+        let name = "Tiago"
+        document.getElementById ("nome").innerHTML = `Meu nome é ${name}`;
+    </script>
+
+</body>
+</html>
